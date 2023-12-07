@@ -8,9 +8,9 @@ services:
     tty: true
     volumes:
       - ./data/:/app/data
-      - ./notebooks/:/app/notebooks
-      - ./scripts/:/app/scripts
+      - ./notebooks/:/app/notebooks      
       - ./images/:/app/images
+      - ./semantic-search-fastapi/:/app/semantic-search-fastapi
     deploy:
       resources:
         reservations:
