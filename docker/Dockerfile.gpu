@@ -21,7 +21,7 @@ RUN pip3 install torch torchvision torchaudio -f https://download.pytorch.org/wh
 WORKDIR /app
 
 COPY /notebooks/. /app/notebooks
-COPY /scripts/. /app/scripts
-COPY /images/. /app/scripts
+COPY /data/. /app/data
+COPY /images/. /app/images
 
 ENV PYTHONPATH="${PYTHONPATH}:/app"
