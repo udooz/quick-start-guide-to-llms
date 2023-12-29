@@ -12,6 +12,14 @@
   Welcome to the GitHub repository for the "Quick Start Guide to Large Language Models" book. This repository contains the code snippets and notebooks used in the book, demonstrating various applications of Transformer models.
 </p>
 
+## .env file keys
+
+JUPYTER_PORT=8888
+TENSORBOARD_PORT=6006
+OPENAI_API_KEY=
+PINECONE_API_KEY=
+COHERE_API_KEY=
+
 
 ## Repository Structure
 

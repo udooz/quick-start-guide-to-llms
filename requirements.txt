@@ -6,3 +6,6 @@ streamlit
 datasets
 torch
 transformers
+cohere
+plotly
+pinecone-client
