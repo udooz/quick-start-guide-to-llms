@@ -10,3 +10,4 @@ cohere
 plotly
 pinecone-client
 seaborn
+tiktoken
