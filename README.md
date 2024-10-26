@@ -10,6 +10,10 @@
 
 Welcome to the GitHub repository for the **"Quick Start Guide to Large Language Models - Second Edition"**. This repository contains the code snippets and notebooks used in the book, demonstrating various applications and advanced techniques in working with Transformer models and large language models (LLMs). [View the code for the First Edition here](https://github.com/sinanuozdemir/quick-start-guide-to-llms/tree/1e)
 
+## To Run via Docker
+
+Read docker-usage-guide.md
+
 
 ## Repository Structure
 

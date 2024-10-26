@@ -1,0 +1,28 @@
+FROM nvcr.io/nvidia/pytorch:24.01-py3
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
+RUN apt-get update
+
+
+RUN pip install --upgrade pip
+
+WORKDIR /app
+
+COPY ./requirements.txt /app
+RUN pip install -r /app/requirements.txt
+
+# Install PyTorch and torchvision
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# Set the working directory
+WORKDIR /app
+
+COPY /notebooks/. /app/notebooks
+COPY /data/. /app/data
+COPY /images/. /app/images
+COPY /semantic-search-fastapi/. /app/semantic-search-fastapi
+
+ENV PYTHONPATH="${PYTHONPATH}:/app"
